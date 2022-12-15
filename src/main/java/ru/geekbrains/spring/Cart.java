@@ -8,7 +8,6 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 @Component
 @Scope("prototype")
 public class Cart {

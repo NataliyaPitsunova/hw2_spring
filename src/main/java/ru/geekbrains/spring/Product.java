@@ -1,5 +1,4 @@
 package ru.geekbrains.spring;
-
 public class Product {
     int id;
     String title;

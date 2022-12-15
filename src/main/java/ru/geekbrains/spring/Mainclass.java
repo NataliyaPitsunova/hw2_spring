@@ -1,8 +1,6 @@
 package ru.geekbrains.spring;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import java.util.Scanner;
 
 public class Mainclass {
@@ -12,12 +10,12 @@ public class Mainclass {
         boolean exit = false;
         System.out.println("У вас пустая корзина");
         while (exit == false) {
-            System.out.println("Для добавления продукта введите его id в диапазоне[1..5].");
+            System.out.println("Для добавления продукта введите его id в диапазоне [1..5].");
             System.out.println("Для удаления продуктов из корзины нажмите 0.");
+            System.out.println("Для просмотра вашей корзины -2");
             System.out.println("Для завершения нажмите -1");
             Scanner sc = new Scanner(System.in);
             int id = sc.nextInt();
-
             switch (id) {
                 default:
                     cart.addproductById(id);
