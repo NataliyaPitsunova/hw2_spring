@@ -1,7 +1,6 @@
 package ru.geekbrains.spring;
 
 import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,11 +14,11 @@ public class ProductRepository {
     @PostConstruct
     public void init() {
         products = new ArrayList<>(Arrays.asList(
-                new Product(1, "Bread", 30),
-                new Product(2, "Milk", 80),
-                new Product(3, "Mango", 150),
-                new Product(4, "Avocado", 150),
-                new Product(5, "Olives", 200)
+                new Product(1, "Хлеб", 30),
+                new Product(2, "Молоко", 80),
+                new Product(3, "Манго", 150),
+                new Product(4, "Авокадо", 150),
+                new Product(5, "Оливки", 200)
         ));
 
     }
